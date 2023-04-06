@@ -31,7 +31,7 @@ class Portativ:
         s('.show-all').click()
         s('[href="https://portativ.ua/ua/category_841832.html?brand=169841"]').click()
         #ss('.hide').element_by(have.exact_text('Shure')).click()
-        #s('//label[contains(.,"Є")]/input').click()
+        s('#right_filter > article > form > fieldset > div > div.filter-include > ul.filter-menu.class-aktivnoe_shumopodavlenie_anc_1368 > li > label > span > a').click()
         return self
 
 
