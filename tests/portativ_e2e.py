@@ -2,7 +2,7 @@ from selene import have, command
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s, ss
 from time import sleep
-from portativ_testing.Model import port
+from portativ_e2e_test.portativ_testing.Model import port
 
 def test_portativ():
     port.open()

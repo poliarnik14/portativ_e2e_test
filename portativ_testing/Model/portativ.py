@@ -8,10 +8,11 @@ class Portativ:
 
     def open(self):
         browser.open('https://portativ.ua/ua/')
+        browser.driver.maximize_window()
         return self
 
     def search(self, port: str):
-        s('#search-desktop').type(port).press_enter()
+        s('[id="search-desktop"]').type(port).press_enter()
         return self
 
     def headphones_btn(self):
@@ -30,7 +31,7 @@ class Portativ:
         s('.show-all').click()
         s('[href="https://portativ.ua/ua/category_841832.html?brand=169841"]').click()
         #ss('.hide').element_by(have.exact_text('Shure')).click()
-        s('//label[contains(.,"Є")]/input').click()
+        #s('//label[contains(.,"Є")]/input').click()
         return self
 
 
