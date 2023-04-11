@@ -1,0 +1,2 @@
+Selene - latest version (нужно галочкой выбрать версию, иначе не подтягивает)
+Pytest - latest version (тоже самое)
