@@ -125,12 +125,12 @@ class Portativ:
         s('.catalogcompare-add').click()
         return self
 
-    def compare_click(self):
-        s('.catalogcompare-add').click()
-
     def compare_shure_choose(self):
         s('[href="https://portativ.ua/ua/product_28335.html"]').click()
         return self
+
+    def compare_click(self):
+        s('[title="Порівняння"]').click()
 
     def compare_clear(self):
         s('.w-close').click().click()
