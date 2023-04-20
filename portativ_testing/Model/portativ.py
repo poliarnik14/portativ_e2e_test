@@ -40,18 +40,18 @@ class Portativ:
         s('.show-all').click()
         s('[href="https://portativ.ua/ua/category_841832.html?brand=169841"]').click()
         sleep(3)
-        s('#right_filter > article > form > fieldset > div > div.filter-include > '
-          'ul.filter-menu.class-aktivnoe_shumopodavlenie_anc_1368 > li > label > span > a').click()
+        s('#right_filter > article > form > fieldset > div > div.filter-include > ul.filter-menu.'
+          'class-tip_podkljuchenija_fe9f > li:nth-child(1) > label > span > a').click()
         sleep(2)
         return self
 
     def first_shure_click(self, heads_name: str):
-        s('/html/body/div[1]/div[4]/div[2]/div[2]/div[3]/div[1]/div/div[2]/div[5]/a').click()
+        s('[href="https://portativ.ua/ua/product_24267.html"]').click()
         ss('.product-sku').should(have.exact_texts(heads_name))
         return self
 
     def add_to_cart_click(self):
-        s('/html/body/div[4]/div[2]/div[2]/div[3]/div[3]/div[2]/div[1]/button').click()
+        s('/html/body/div[4]/div[2]/div[2]/div[3]/div[2]/div[2]/div[1]/button').click()
         return self
 
     def cart_close_click(self):
@@ -126,7 +126,7 @@ class Portativ:
         return self
 
     def compare_shure_choose(self):
-        s('[href="https://portativ.ua/ua/product_28335.html"]').click()
+        s('[href="https://portativ.ua/ua/product_24267.html"]').click()
         return self
 
     def compare_click(self):

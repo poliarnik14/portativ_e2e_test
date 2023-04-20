@@ -1,4 +1,4 @@
-from portativ_testing.Model import port
+from portativ_e2e_test.portativ_testing.Model import port
 
 def test_portativ():
     port.open()
@@ -8,7 +8,7 @@ def test_portativ():
     port.first_item_click()
     port.headphones_category_click()
     port.shure_filters_choose()
-    port.first_shure_click('Код товару: 28335')
+    port.first_shure_click('Код товару: 24267')
     # Cart
     port.add_to_cart_click()
     port.cart_close_click()
@@ -39,7 +39,7 @@ def test_portativ():
     port.compare_click()
     port.compare_clear()
     port.profile_exit()
-    # Negative tests
+def test_negative():
     port.login_link_click()
     port.login_data_input('oleksii.nizhynskyi', 'qwertyqwerty')
     port.negative_login()
