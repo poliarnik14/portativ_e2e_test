@@ -1,4 +1,4 @@
-from portativ_e2e_test.portativ_testing.Model import port
+from portativ_testing.Model import port
 
 def test_portativ():
     port.open()
